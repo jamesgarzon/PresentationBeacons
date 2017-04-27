@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FindTheBeacon</string>
+    <string name="nearestBeacon">Beacon mas cercano</string>
+    <string name="others">Otros beacons cercanos</string>
 </resources>
