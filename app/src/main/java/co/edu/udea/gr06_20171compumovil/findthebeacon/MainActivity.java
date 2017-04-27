@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             case 648:
                 return R.drawable.purple;
             default:
-                return Integer.parseInt(null);
+                return R.drawable.white;
         }
     }
 }
