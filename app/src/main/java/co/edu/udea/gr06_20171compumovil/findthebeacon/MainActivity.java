@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 message = "";
                 for (Beacon beacon: list){
                     message += "Beacon #: " + String.valueOf(beacon.getMajor())+"\n";
-                    message += "Distancia: "+ getDistance(beacon) + "\n\n";
+                    message += "Distancia: "+ String.valueOf(utilsBeacons.computeAccuracy(beacon)) + "\n\n";
                 }
                 beaconsInfo.setText("data: \n" + message);
             }
@@ -56,11 +56,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-    private String getDistance(Beacon beacon) {
-       Double distance = utilsBeacons.computeAccuracy(beacon);
-        return String.valueOf(distance);
-    }
-
-
 }
